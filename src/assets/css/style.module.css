@@ -1,0 +1,95 @@
+/*PALETTA DE COLORES*/
+:root {
+    --color-01: #a21226;
+    --color-02: #cf112b;
+    --color-03: #23428a;
+    --color-04:#2349aa;
+    --color-05: #144d4d;
+    --color-06: #125959;
+    --color-07: #fddb00;
+    --color-08: #ffeb0d;
+    --color-fondo: #f0f7fe;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+.bgColorFondo{
+    background-color: var(--color-fondo);
+}
+
+.bgInput {
+    border: 1.8px solid var(--color-03);
+}
+
+.bgInput:focus {
+    border: 2px solid var(--color-03);
+    box-shadow: 0 0 0 0.2rem var(--color-03);
+}
+
+.bgColorPrincipal {
+    background-color: var(--color-01);
+}
+
+.bgColorSecundario {
+    background-color: var(--color-02);
+}
+
+.btnPersonalizado1 {
+    background-color: var(--color-01);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado1:hover {
+    background-color: var(--color-02);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado1:focus {
+    background-color: var(--color-02);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado2 {
+    background-color: var(--color-03);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado2:hover {
+    background-color: var(--color-04);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado2:focus {
+    background-color: var(--color-04);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado3 {
+    background-color: var(--color-05);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado3:hover {
+    background-color: var(--color-06);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado3:focus {
+    background-color: var(--color-06);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado4 {
+    background-color: var(--color-07);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado4:hover {
+    background-color: var(--color-08);
+    color: var(--color-blanco);
+}
+
+.btnPersonalizado4:focus {
+    background-color: var(--color-08);
+    color: var(--color-blanco);
+}
