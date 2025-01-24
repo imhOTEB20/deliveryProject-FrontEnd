@@ -3,6 +3,7 @@ import style from '../css/style.module.css';
 import logo from '../img/logo.png';
 import { Link } from "react-router-dom";
 import { routes } from "../utils/routes";
+import ModalLogin from './ModalLogin';
 
 const NavBarBienvenida = () => {
     return (
@@ -51,15 +52,14 @@ const NavBarBienvenida = () => {
                             </ul>
                         </li>
                         <li className="nav-item mx-2">
-                        <button type="button" className={"btn fw-bold text-black mb-sm-2 mb-lg-0 fs-sm-6 fs-lg-5 " + style.btnPersonalizado4} id="boton-iniciar-sesion"
-                            data-bs-toggle="modal" data-bs-target="#iniciarSesionModal" style={{fontSize: window.innerWidth >= 992 ? "1.25rem" : "0.875rem",}}>
+                        <button type="button" id="boton-iniciar-sesion" className={"btn fw-bold text-black mb-sm-2 mb-lg-0 fs-sm-6 fs-lg-5 " + style.btnPersonalizado4}
+                        aria-label="Iniciar Sesión" data-bs-toggle="modal" data-bs-target="#iniciarSesionModal" style={{fontSize: window.innerWidth >= 992 ? "1.25rem" : "0.875rem",}}>
                             Iniciar Sesión
                         </button>
                         </li>
                         <li className="nav-item mx-2">
-                        <button className={"btn fw-bold text-black mb-sm-2 mb-lg-0 fs-sm-6 fs-lg-5 " + style.btnPersonalizado4} type="button" data-bs-toggle="modal"
-                            data-bs-target="#suscripcionModal" style={{fontSize: window.innerWidth >= 992 ? "1.25rem" : "0.875rem",}}>
-                            Suscripción
+                        <button type="button" id="registrarse-modal" className={"btn fw-bold text-black mb-sm-2 mb-lg-0 fs-sm-6 fs-lg-5 " + style.btnPersonalizado4} aria-label="Registrarse" data-bs-toggle="modal" data-bs-target="#registrarseModal" style={{fontSize: window.innerWidth >= 992 ? "1.25rem" : "0.875rem",}}>
+                            Registrarse
                         </button>
                         </li>
                     </ul>
