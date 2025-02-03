@@ -1,6 +1,5 @@
 import stylePedidosPrincipal from '../css/pedidosPrincipal.module.css';
 
-
 import imgPollo from '../img/pollo.png';
 import imgComboPollo from '../img/pollo-frito.png';
 import imgPizza from '../img/pizza.png';

@@ -1,0 +1,73 @@
+root {
+    --color-01: #a21226;
+    --color-02: #cf112b;
+    --color-03: #23428a;
+    --color-04:#2349aa;
+    --color-05: #144d4d;
+    --color-06: #125959;
+    --color-07: #fddb00;
+    --color-08: #ffeb0d;
+    --color-fondo: #f0f7fe;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+.footerBienvenida{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: var(--color-01);
+    padding: 20px 30px;
+}
+
+.footerBienvenida .sectionFooter{
+    width: 20%;
+}
+
+.footerBienvenida .sectionFooter .tituloFooter{
+    color: var(--color-blanco);
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive;
+
+}
+
+.footerBienvenida .sectionFooter .articleFooter{
+    color: var(--color-blanco);
+    font-family: 'Heebo', sans-serif;
+}
+
+.footerBienvenida .sectionFooter .articleFooter .aFooter{
+    color: var(--color-blanco);
+}
+
+.footerBienvenida .sectionFooter .contactos .iContactos{
+    margin-right: 5px;
+    color: var(--color-blanco);
+}
+
+.textoContacto{
+    color: var(--color-blanco);
+}
+
+.footerBienvenida .sectionFooter .redes{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footerBienvenida .sectionFooter .redes .iRedes{
+    font-size: 32px;
+    margin-right: 15px;
+    color: var(--color-blanco);
+}
+
+@media (max-width: 768px) {
+    .footerBienvenida{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerBienvenida .sectionFooter{
+        width: 85%;
+        margin: 10px 0px;
+    }
+}

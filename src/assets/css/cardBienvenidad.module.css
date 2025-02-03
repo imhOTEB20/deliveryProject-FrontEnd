@@ -1,0 +1,86 @@
+:root {
+    --color-01: #a21226;
+    --color-02: #cf112b;
+    --color-03: #23428a;
+    --color-04:#2349aa;
+    --color-05: #144d4d;
+    --color-06: #125959;
+    --color-07: #fddb00;
+    --color-08: #ffeb0d;
+    --color-fondo: #f0f7fe;
+    --color-blanco: #fff;
+    --color-negro: #000;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-family: 'Heebo', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+.cards .card{
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+    width: 40vh;
+    height: 450px;
+    padding: 20px;
+}
+
+.card .logo{
+    color: var(--color-01);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .tituloCard{
+    margin-bottom: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 1299px) {
+    .cards{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards .card{
+        width: 35%;
+        margin: 10px 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cards .card{
+        width: 55%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards .card{
+        width: 55%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .cards .card{
+        width: 90%;
+    }
+}
+
+@media (max-width: 410px) {
+    .cards{
+        padding: 10px;
+    }
+
+    .cards .card .textoCard{
+        font-size: 14px;
+    }
+
+}
