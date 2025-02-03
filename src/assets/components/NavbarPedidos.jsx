@@ -1,14 +1,36 @@
+import Swal from 'sweetalert2';
+
 import styleNavPedidos from '../css/navbarPedidos.module.css';
 import logo from '../img/logo.png';
+import ModalVerMas from './ModalVerMas';
 
 const NavbarPedidos = () => {
+    const cerrarSesion = () =>{
+        Swal.fire({
+            title: "Cerrar Sesión",
+            text: "¿Estás seguro de cerrar sesión?",
+            icon: "warning",
+            showCancelButton: true,
+            background: "#eaeef4",
+            confirmButtonColor: "#144d4d",
+            confirmButtonText: "Si, cerrar",
+            cancelButtonColor: "#A60505",
+            cancelButtonText: "Cancelar"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                setToExit(true);
+            }
+        });
+    }
+
     return (
     <header className={styleNavPedidos.headerPrincipal}>
         <section className={styleNavPedidos.contenedorLogo}>
             <img className={styleNavPedidos.logoImage} src={logo} alt="logo"/>
             <article className={styleNavPedidos.logoTexto}>
                 <p className={styleNavPedidos.logoTitulo}>Los pollos hermanos</p>
-                <a href="#" className={"btn active p-1 " + styleNavPedidos.bottonVerMas}  role="button" data-bs-toggle="button" aria-pressed="true">Ver más</a>
+                <button className={"btn " + styleNavPedidos.btnPersonalizado3 + " p-1"} aria-label="verMas" data-bs-toggle="modal" data-bs-target="#verMas">Ver más</button>
+                <ModalVerMas/>
             </article>
         </section>
         <article className={styleNavPedidos.contenedorBotonComprar}>
@@ -30,7 +52,7 @@ const NavbarPedidos = () => {
                     <a href="#" className={styleNavPedidos.redSocial} target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
                     <a href="#" className={styleNavPedidos.redSocial} target="_blank"><i className="fa-brands fa-facebook"></i></a>
                     <a href="#" className={styleNavPedidos.redSocial} target="_blank"><i className="fa-brands fa-instagram"></i></a>
-                    <button className={"btn "+ styleNavPedidos.btnPersonalizado3 + " p-2 ms-2 fw-semibold"}><i className="fa-solid fa-right-from-bracket"></i> Salir</button>
+                    <button className={"btn "+ styleNavPedidos.btnPersonalizado3 + " p-2 ms-2 fw-semibold"} onClick={cerrarSesion}><i className="fa-solid fa-right-from-bracket"></i> Salir</button>
                 </div>
             </article>
         </nav>
